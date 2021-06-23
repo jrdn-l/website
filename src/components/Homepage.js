@@ -1,4 +1,5 @@
 import gif from '../Images/Ghost.gif'
+import pc from '../Images/PC.JPG'
 const Homepage = () => {
     return (
         <div className='container'>
@@ -13,15 +14,15 @@ const Homepage = () => {
             </div>
             <h2>About Me</h2>
             <div className='container'>
-                <img src={gif} alt='This is a placeholder'/>
+                <img src={gif} alt='Me!'/>
                 <p>
                     My name's Jordan Lin. I am currently a Univeristy of Toronto student specializing in Computer Science. My CGPA is currently 3.44/4.0.
-                    I decided to go into computer science because I liked being able to see the code I wrote turn into a full product that works, it makes me feel really good.
+                    I decided to go into computer science because I liked being able to see the code I wrote turn into a full product that works.
                     I really enjoy working with computers and cellphones but mostly computers. I just recently built a computer for myself since my laptop that I used to use
-                    broke. I'll add a picture below.
+                    stopped working. I'll add a picture below of my computer.
                 </p>
                 <br/>
-                <img src='https://assets3.razerzone.com/3UBrT0-Kcjsn_BUvodXOiRP7dMQ=/767x511/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh26%2Fha9%2F9090918449182%2Frazer-tomahawk-a1-1500x1000_0.jpg'/>
+                <img className='img'src={pc} alt='PC'/>
                 <br/>
                 <br/>
                 <p>
