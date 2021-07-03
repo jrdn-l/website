@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-const Button = ({ title, color, to}) => {
+const Button = ({ title, color, to, onClick}) => {
     return (
-        <Link to={to} className="btn">{title}</Link>
+        <Link to={to} onClick={onClick} className="btn">{title}</Link>
     )
 }
 
