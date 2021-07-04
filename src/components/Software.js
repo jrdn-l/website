@@ -5,19 +5,17 @@ const Software = () => {
 
     const [tldrDiscord, setTldrDiscord] = useState(true)
     const [tldrRushmate, setTldrRushmate] = useState(true)
-    const [tldrJailbreak, setTldrJailbreaksa] = useState(true)
     return (
-        <div className='container'>
-            <p>Welcome to the software projects page.
+        <div>
+            <p style={{paddingLeft: '13%'}}>Welcome to the software projects page.
                 Here you can learn more about the software projects
                 that I have worked on.
             </p>
-            <br />
-            <div>
+            <div className='container'>
                 <h2>Discord Bot</h2>
                 <p>Tools and Libraries: Python, Discord py, YoutubeDL, Git</p>
                 <br />
-                <Tldr tldr='Discord Bot' onClick={() => setTldrDiscord(!tldrDiscord)} visible={tldrDiscord}
+                <Tldr tldr='Discord bot made using python that allows users to play some games and listen to music' onClick={() => setTldrDiscord(!tldrDiscord)} visible={tldrDiscord}
                     expanded="This was a bot I made in my first year of univeristy. I initially started this
                 project because my friends and I were really into another bot managed by a third-party called
                 Pokecord. Pokecord was a bot that would occationally send messages with pokemon that you could catch.
@@ -34,12 +32,11 @@ const Software = () => {
                 <a href='https://github.com/jrdn-l/mydiscordbot'>Source code</a>
 
             </div>
-            <br />
-            <div>
+            <div className='container'>
                 <h2>RushMate App</h2>
                 <p>Tools and Libraries: Python, JavaScript, React Native, Git, MongoDB, Android, iOS, Google API</p>
                 <br />
-                <Tldr tldr='App to help with COVID-19' onClick={()=>setTldrRushmate(!tldrRushmate)} visible={tldrRushmate}
+                <Tldr tldr='Android and iOS app developed with React Native to help with finding a less croweded location with user given "tags".' onClick={() => setTldrRushmate(!tldrRushmate)} visible={tldrRushmate}
                     expanded='This app was a project for School done with a group. Since it was written with React Native, the app works on both
                     iOS and Android platforms. Inspired by COVID-19 this app was supposed to help users get to locations that were
                     less busy so that they would come into contact with less people.
@@ -52,9 +49,9 @@ const Software = () => {
                     to submit a request to the restful API; I also had to modify the backend to support saving a users favourite "Tag" to the database and accessing it.'/>
                 <br />
             </div>
-            <div>
+            <div className='container'>
                 <h2>iOS Jailbreak Tweaks</h2>
-                <p>Tools and Libraries: THEOS, Objective-C, Logos, Git, HTML, iOS Frameworks</p>
+                <p>Tools and Libraries: THEOS, Objective-C, Logos, Git, HTML, iOS Frameworks, WSL, Linux</p>
                 <br />
                 <p>Something I do for fun. I have made three basic tweaks so far:</p>
                 <dl>
@@ -66,9 +63,8 @@ const Software = () => {
                     <dd>- Automatically unlocks any FaceID device when it detects your face. (i.e don't have to swipe up to open)</dd>
                     <dd>- Has configurable settings like: Disable when notifications are present, Disable if media controls are displayed</dd>
                 </dl>
-
+                <a href='https://github.com/jrdn-l/tweaks'>Source code</a>
             </div>
-            <br />
         </div>
     )
 }

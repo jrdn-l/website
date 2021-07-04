@@ -8,7 +8,7 @@ const Tldr = ({ tldr, expanded, onClick, visible }) => {
                 <Button title='No TLDR' onClick={onClick} />
             </div> : <div>
                 <p>{expanded}</p>
-                <Button title='TLDR' onClick={onClick} />
+                <Button title='TLDR' onClick={onClick}/>
             </div>
             }
         </div>
