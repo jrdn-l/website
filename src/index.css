@@ -22,10 +22,12 @@ body {
 
 .txtcontainer {
   margin: 30px auto;
+  max-width: 80%;
   overflow: auto;
-  min-height: 300px;
   padding: 30px;
   border-radius: 5px;
+  border: 1px solid steelblue;
+  justify-content: center;
 }
 
 .header {
@@ -67,64 +69,19 @@ body {
   width: 100%;
 }
 
-.task {
-  background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.task.reminder {
-  border-left: 5px solid green;
-}
-
-.task h3 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.add-form {
-  margin-bottom: 40px;
-}
-
-.form-control {
-  margin: 20px 0;
-}
-
-.form-control label {
-  display: block;
-}
-
-.form-control input {
-  width: 100%;
-  height: 40px;
-  margin: 5px;
-  padding: 3px 7px;
-  font-size: 17px;
-}
-
-.form-control-check {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form-control-check label {
-  flex: 1;
-}
-
-.form-control-check input {
-  flex: 2;
-  height: 20px;
-}
-
 .footer {
   margin-top: 30px;
   text-align: center;
 }
 
+
 .img {
   width: 100%;
   height: auto;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
