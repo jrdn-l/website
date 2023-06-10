@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="bg-white dark:bg-black">
       <nav className="flex flex-center items-center justify-evenly p-6">
-        <button className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Home</button>
-        <button className="text-sm font-semibold leading-6 text-gray-900 dark:text-white">Projects</button>
+        <Link className="text-sm font-semibold leading-6 text-gray-900 dark:text-white" href="/">Home</Link>
+        <Link className="text-sm font-semibold leading-6 text-gray-900 dark:text-white" href="#projects" scroll={false}>Projects</Link>
 
         <a rel="noopener noreferrer" target="_blank" href="https://github.com/jrdn-l" className="-m-1.5 px-3">
           <picture>
