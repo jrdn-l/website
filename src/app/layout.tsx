@@ -14,13 +14,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
-        {children}
-        <Footer />
+        <div className="min-h-screen flex flex-col justify-between">
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   )
