@@ -12,8 +12,9 @@ export default function Projects() {
       <h1>Projects</h1>
       <button className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
         onClick={() => setShowModal(true)}>Show Modal</button>
-
-      {showModal ? (<Modal setShowModal={setShowModal} />) : null}
+      <Modal showModal={showModal} setShowModal={setShowModal} title="Hello" description="World" />
     </div>
+
+
   )
 }
