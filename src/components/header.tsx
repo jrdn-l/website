@@ -7,6 +7,7 @@ export default function Header() {
       <nav className="flex flex-center items-center justify-evenly p-6">
         <Link className="text-sm font-semibold leading-6" href="/">Home</Link>
         <Link className="text-sm font-semibold leading-6" href="#projects" scroll={false}>Projects</Link>
+        <a rel="noopener noreferrer" target="_blank" className="text-sm font-semibold leading-6" href="/Resume.pdf">Resume</a>
 
         <a rel="noopener noreferrer" target="_blank" href="https://github.com/jrdn-l" className="-m-1.5 px-3">
           <picture>
