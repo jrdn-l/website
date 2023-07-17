@@ -15,8 +15,7 @@ export const particles: RecursivePartial<IOptions> =
     "defaultThemes": {},
     "delay": 0,
     "fullScreen": {
-      "enable": false,
-      "zIndex": 1
+      "enable": false
     },
     "detectRetina": true,
     "duration": 0,

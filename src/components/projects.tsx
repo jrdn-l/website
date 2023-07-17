@@ -20,26 +20,23 @@ export default function Projects() {
 
 
   return (
-    <div id="projects">
-      <h1>Projects</h1>
+    <div id="projects" className="p-4 h-screen scroll-smooth">
+      <h1 className="p-4 text-xl text-left">Notable Projects</h1>
       <Modal showModal={showDiscordModal} setShowModal={setShowDiscordModal} title="Discord Bot" description={discordBotDescription} />
       <Modal showModal={showRushMateModal} setShowModal={setShowRushMateModal} title="RushMate App" description={rushMatDescription} />
       <Modal showModal={showCGAModal} setShowModal={setShowCGAModal} title="Covid Go Away" description={cgaDescription} />
-      <Modal showModal={showTweaksModal} setShowModal={setShowTweaksModal} title="Jailbreak Tweaks" description={tweaksDescription}></Modal>
+      <Modal showModal={showTweaksModal} setShowModal={setShowTweaksModal} title="Jailbreak Tweaks" description={tweaksDescription}/>
 
       <div className="grid grid-rows-3 grid-cols-3 gap-5 max-w-4xl">
-        <Card setShowModal={setShowCGAModal} title="Covid Go Away" className='row-span-2 col-span-1'
-          description='Card game inspired by Sushi Go on the web.' />
-        <Card setShowModal={setShowRushMateModal} title="RushMate App" className='col-span-2'
+        <Card setShowModal={setShowRushMateModal} title="RushMate App" className='row-span-2'
           description='Android and iOS app developed with React Native to help with finding a less croweded location with user given "tags".' />
+        <Card setShowModal={setShowCGAModal} title="Covid Go Away" className='col-span-2'
+          description='Card game inspired by Sushi Go on the web.' />
         <Card setShowModal={setShowDiscordModal} title="Discord Bot" className="row-span-1 col-span-1"
           description='Discord bot that allows users to play some games and listen to music' />
         <Card setShowModal={setShowTweaksModal} title="Jailbreak Tweaks" className="row-span-1 col-span-1"
           description='Quality of Life tweaks made for Jailbroken devices on iOS 14' />
       </div>
-
-
-
     </div>
 
 
