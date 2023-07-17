@@ -3,24 +3,20 @@
 import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
-import { Engine, Container } from "tsparticles-engine";
+import { Engine } from "tsparticles-engine";
 import { particles } from "./particlesjs-config";
 
 export default function About() {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container: Container | undefined) => {
-    await console.log(container);
-  }, []);
 
 
   return (
     <>
       <Particles
-        id="tsparticles" options={particles} init={particlesInit} loaded={particlesLoaded} />
+        id="tsparticles" options={particles} init={particlesInit} />
       <div>
         <h1>Home</h1>
         <p className="justify-center max-w-xl">
