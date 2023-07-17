@@ -1,8 +1,9 @@
+'use client'
 import Link, { LinkProps } from "next/link";
-
 import { HTMLProps, MouseEvent, FC } from "react";
 
-export const CustomLink: FC<LinkProps & HTMLProps<HTMLAnchorElement>> = ({ as, children, href, replace, scroll, shallow, passHref, ...rest }) => {
+
+export const CustomLink: FC<LinkProps & HTMLProps<HTMLAnchorElement>> = ({ href, children, scroll,  ...rest }) => {
 	const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
 		if (href.startsWith("#")) {
 			event.preventDefault();
@@ -11,10 +12,10 @@ export const CustomLink: FC<LinkProps & HTMLProps<HTMLAnchorElement>> = ({ as, c
 		}
 	};
 	return (
-		<Link as={as} href={href} passHref={passHref} replace={replace} scroll={scroll} shallow={shallow} onClick={onClick}>
-			{/* <a href={href} {...rest} onClick={onClick}> */}
+		<Link href={href} legacyBehavior={true} scroll={scroll}>
+			<a href={href} {...rest} onClick={onClick}>
 				{children}
-			{/* </a> */}
+			</a>
 		</Link>
 	);
 };
