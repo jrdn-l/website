@@ -20,7 +20,7 @@ export default function Projects() {
 
 
   return (
-    <div id="projects" className="p-4 h-screen scroll-smooth">
+    <div id="projects" className="p-4 h-screen scroll-smooth flex items-center justify-center">
       <h1 className="p-4 text-xl text-left">Notable Projects</h1>
       <Modal showModal={showDiscordModal} setShowModal={setShowDiscordModal} title="Discord Bot" description={discordBotDescription} />
       <Modal showModal={showRushMateModal} setShowModal={setShowRushMateModal} title="RushMate App" description={rushMatDescription} />
