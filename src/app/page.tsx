@@ -4,7 +4,7 @@ import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-around w-full flex-1 px-20 text-center">
+    <main className="flex flex-col items-center justify-around w-full flex-1 text-center">
       <Landing/>
       <About/>
       <Projects/>
