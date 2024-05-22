@@ -3,7 +3,7 @@ import Link, { LinkProps } from "next/link";
 import { HTMLProps, MouseEvent, FC } from "react";
 
 
-export const CustomLink: FC<LinkProps & HTMLProps<HTMLAnchorElement>> = ({ href, children, scroll,  ...rest }) => {
+export const CustomLink: FC<LinkProps & HTMLProps<HTMLAnchorElement>> = ({ href, children, scroll, ...rest }) => {
 	const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
 		if (href.startsWith("#")) {
 			event.preventDefault();
