@@ -2,7 +2,7 @@
 
 export default function Landing() {
   return (
-    <div className="h-screen flex items-center justify-center">
+    <div id="home" className="h-screen flex items-center justify-center">
 
         <p className="max-w-xl">
           Welcome to my website. I initially created this website originally to learn some HTML, CSS and Javascript.

@@ -5,7 +5,7 @@ export default function Header() {
   return (
     <header>
       <nav className="fixed w-full flex flex-center items-center justify-evenly p-10 bg-slate-50 dark:bg-black">
-        <CustomLink className="text-sm font-semibold leading-6" href="/">Home</CustomLink>
+        <CustomLink className="text-sm font-semibold leading-6" href="#home">Home</CustomLink>
         <CustomLink className="text-sm font-semibold leading-6" href="#aboutMe">About Me</CustomLink>
         <CustomLink className="text-sm font-semibold leading-6" href="#projects">Projects</CustomLink>
         <a rel="noopener noreferrer" target="_blank" className="text-sm font-semibold leading-6" href="/Resume.pdf">Resume</a>
