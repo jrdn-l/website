@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import NavHeader from '@/components/NavHeader.vue'
 // import VerticalSteps from '@/components/VerticalSteps.vue'
-import About from '@/components/views/About.vue'
-import Experience from '@/components/views/Experience.vue'
-import Projects from '@/components/views/Projects.vue'
+import About from '@/components/views/AboutView.vue'
+import Experience from '@/components/views/ExperienceView.vue'
+import Projects from '@/components/views/ProjectsView.vue'
 import { ref, provide } from 'vue'
 
 const isDark = ref(false)
