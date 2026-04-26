@@ -30,6 +30,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue'
           <li><a href="#about">About Me</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
       </div>
       <!-- Title -->
@@ -42,6 +43,7 @@ import ThemeToggle from '@/components/ThemeToggle.vue'
         <li class="py-1"><a href="#about">About Me</a></li>
         <li class="py-1"><a href="#experience">Experience</a></li>
         <li class="py-1"><a href="#projects">Projects</a></li>
+        <li class="py-1"><a href="#skills">Skills</a></li>
         <li><ThemeToggle /></li>
       </ul>
     </div>
