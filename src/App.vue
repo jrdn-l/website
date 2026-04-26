@@ -23,7 +23,7 @@ if (preferredTheme == null) {
 </script>
 
 <template>
-  <main :data-theme="isDark ? 'night' : 'light'">
+  <main :data-theme="isDark ? 'teal-dark' : 'teal-light'">
     <NavHeader />
     <div class="flex flex-col col-span-2">
       <About />
