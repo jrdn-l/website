@@ -9,7 +9,10 @@ defineProps<{
     <li v-for="(item, i) in items" :key="i" class="flex gap-4 pb-6 last:pb-0">
       <div class="flex flex-col items-center">
         <div class="w-2.5 h-2.5 rounded-full bg-primary mt-1.5 shrink-0"></div>
-        <div v-if="i < items.length - 1" class="w-0.5 flex-1 bg-base-300 mt-1"></div>
+        <div
+          v-if="i < items.length - 1"
+          class="w-0.5 flex-1 bg-base-300 mt-1"
+        ></div>
       </div>
       <div>
         <p class="font-semibold text-base-content">{{ item.title }}</p>
