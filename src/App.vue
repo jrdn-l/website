@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import NavHeader from '@/components/NavHeader.vue'
-// import VerticalSteps from '@/components/VerticalSteps.vue'
+import HeroSection from '@/components/HeroSection.vue'
 import About from '@/components/views/AboutView.vue'
 import Experience from '@/components/views/ExperienceView.vue'
 import Projects from '@/components/views/ProjectsView.vue'
@@ -26,6 +26,7 @@ if (preferredTheme == null) {
   <main :data-theme="isDark ? 'teal-dark' : 'teal-light'">
     <NavHeader />
     <div class="flex flex-col col-span-2">
+      <HeroSection />
       <About />
       <Experience />
       <Projects />
