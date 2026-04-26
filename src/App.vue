@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection.vue'
 import About from '@/components/views/AboutView.vue'
 import Experience from '@/components/views/ExperienceView.vue'
 import Projects from '@/components/views/ProjectsView.vue'
+import Skills from '@/components/views/SkillsView.vue'
 import { ref, provide } from 'vue'
 
 const isDark = ref(false)
@@ -30,6 +31,7 @@ if (preferredTheme == null) {
       <About />
       <Experience />
       <Projects />
+      <Skills />
     </div>
   </main>
 </template>
