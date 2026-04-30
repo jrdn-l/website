@@ -46,7 +46,7 @@ describe('useScrollAnimate', () => {
     const wrapper = mount(TestComponent)
     await nextTick()
     const el = wrapper.find('[data-testid="el1"]').element as HTMLElement
-    callbacks[0]([{ isIntersecting: true, target: el } as IntersectionObserverEntry], {} as IntersectionObserver)
+    callbacks[0]([{ isIntersecting: true, target: el } as unknown as IntersectionObserverEntry], {} as IntersectionObserver)
     expect(el.classList.contains('scroll-visible')).toBe(true)
   })
 
@@ -54,7 +54,7 @@ describe('useScrollAnimate', () => {
     const wrapper = mount(TestComponent)
     await nextTick()
     const el = wrapper.find('[data-testid="el1"]').element as HTMLElement
-    callbacks[0]([{ isIntersecting: false, target: el } as IntersectionObserverEntry], {} as IntersectionObserver)
+    callbacks[0]([{ isIntersecting: false, target: el } as unknown as IntersectionObserverEntry], {} as IntersectionObserver)
     expect(el.classList.contains('scroll-visible')).toBe(false)
   })
 
