@@ -1,9 +1,21 @@
 <script setup lang="ts">
 import ThemeToggle from '@/components/ThemeToggle.vue'
-// MAYBE ADD IN VUE ROUTER IDK
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrolled = ref(false)
+
+function onScroll() {
+  scrolled.value = window.scrollY > 10
+}
+
+onMounted(() => window.addEventListener('scroll', onScroll))
+onUnmounted(() => window.removeEventListener('scroll', onScroll))
 </script>
 <template>
-  <div class="navbar bg-base-100 fixed">
+  <div
+    class="navbar bg-base-100 fixed transition-shadow duration-200"
+    :class="{ 'border-b border-base-300 shadow-sm backdrop-blur-sm': scrolled }"
+  >
     <div class="navbar-start">
       <!-- Mobile Nav Bar -->
       <div class="dropdown">
