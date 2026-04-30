@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 import { useScrollAnimate } from '@/composables/useScrollAnimate'
 
-const animatedEls: HTMLElement[] = []
-useScrollAnimate(() => animatedEls)
+const animatedEls = ref<HTMLElement[]>([])
+useScrollAnimate(() => animatedEls.value)
 </script>
 
 <template>
