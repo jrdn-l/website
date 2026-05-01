@@ -1,6 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "teal-light";
+  default: true;
+  color-scheme: light;
+
+  --color-primary: #0d9488;
+  --color-primary-content: #ffffff;
+  --color-secondary: #5eead4;
+  --color-accent: #ccfbf1;
+  --color-neutral: #134e4a;
+  --color-base-100: #f0fdfa;
+  --color-base-200: #ccfbf1;
+  --color-base-300: #99f6e4;
+  --color-base-content: #134e4a;
+}
+
+@plugin "daisyui/theme" {
+  name: "teal-dark";
+  color-scheme: dark;
+
+  --color-primary: #0d9488;
+  --color-primary-content: #ffffff;
+  --color-secondary: #0f766e;
+  --color-accent: #134e4a;
+  --color-neutral: #042f2e;
+  --color-base-100: #042f2e;
+  --color-base-200: #0d3330;
+  --color-base-300: #134e4a;
+  --color-base-content: #ccfbf1;
+}
 
 .scroll-hidden {
   opacity: 0;
