@@ -68,13 +68,13 @@ onMounted(() => {
         </div>
       </div>
 
-      <div
+      <img
         data-testid="avatar"
-        class="hero-avatar-el w-[90px] h-[90px] rounded-full bg-gradient-to-br from-base-200 to-base-300 border-2 border-primary flex items-center justify-center text-2xl font-black text-primary shrink-0 mb-4"
+        src="/ghost.gif"
+        alt="Avatar"
+        class="hero-avatar-el w-[90px] h-[90px] rounded-full border-2 border-primary object-cover shrink-0 mb-4"
         :class="{ 'hero-avatar-el--visible': loaded }"
-      >
-        J
-      </div>
+      />
     </div>
 
     <div
