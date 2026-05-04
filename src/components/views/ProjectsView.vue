@@ -6,7 +6,7 @@ const projects = [
   {
     title: 'Beats and Bolts',
     description:
-      'a rhythm-based action game set in a railway factory during the Industrial Revolution. Play as a worker who is trying to get his job back after recently being replaced by machines, all while abiding to the rhythmic rule of the factory. Your goal is to sneak in and battle against the central machine that is taking control in order to save the factory',
+      'Rhythm-based action game set in a railway factory during the Industrial Revolution. Play as a worker who is trying to get his job back after recently being replaced by machines, all while abiding to the rhythmic rule of the factory. Your goal is to sneak in and battle against the central machine that is taking control in order to save the factory',
     tags: ['Unity', 'C#', 'FMOD'],
     link: 'https://github.com/notjustine/Lucid-Mystery',
   },
@@ -27,7 +27,7 @@ const projects = [
   {
     title: 'RushMate App',
     description:
-      'A short description of what this project does and why you built it.',
+      'A COVID-era React Native app for finding nearby, low-traffic spots — filter by distance and crowd levels to avoid the rush',
     tags: ['ReactNative', 'JavaScript', 'ExpressJS', 'MongoDB'],
     link: 'https://github.com/RushMate/RushMate',
   },
