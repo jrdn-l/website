@@ -44,7 +44,7 @@ onMounted(() => {
           :class="{ 'hero-el--visible': loaded }"
           style="transition-delay: 0ms"
         >
-          Jordan Lin<span class="text-primary">.</span>
+          Jordan Lin<span class="text-primary"></span>
         </h1>
         <p
           class="hero-el text-sm text-primary/80 mt-2 font-medium"
