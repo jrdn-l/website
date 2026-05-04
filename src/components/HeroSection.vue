@@ -15,9 +15,18 @@ onMounted(() => {
     id="hero"
     class="h-screen flex flex-col justify-between px-8 py-10 relative overflow-hidden bg-gradient-to-br from-base-100 to-base-200"
   >
-    <div data-testid="shape" class="absolute top-[-60px] right-[-50px] w-[220px] h-[220px] rounded-full bg-primary opacity-[0.07] pointer-events-none"></div>
-    <div data-testid="shape" class="absolute bottom-[30px] right-[80px] w-[120px] h-[120px] rounded-full bg-primary opacity-[0.06] pointer-events-none"></div>
-    <div data-testid="shape" class="absolute top-[60px] right-[140px] w-[60px] h-[60px] rounded-full bg-primary opacity-[0.10] pointer-events-none"></div>
+    <div
+      data-testid="shape"
+      class="absolute top-[-60px] right-[-50px] w-[220px] h-[220px] rounded-full bg-primary opacity-[0.07] pointer-events-none"
+    ></div>
+    <div
+      data-testid="shape"
+      class="absolute bottom-[30px] right-[80px] w-[120px] h-[120px] rounded-full bg-primary opacity-[0.06] pointer-events-none"
+    ></div>
+    <div
+      data-testid="shape"
+      class="absolute top-[60px] right-[140px] w-[60px] h-[60px] rounded-full bg-primary opacity-[0.10] pointer-events-none"
+    ></div>
 
     <div></div>
 
@@ -35,14 +44,14 @@ onMounted(() => {
           :class="{ 'hero-el--visible': loaded }"
           style="transition-delay: 0ms"
         >
-          Jordan<span class="text-primary">.</span>
+          Jordan Lin<span class="text-primary">.</span>
         </h1>
         <p
           class="hero-el text-sm text-primary/80 mt-2 font-medium"
           :class="{ 'hero-el--visible': loaded }"
           style="transition-delay: 250ms"
         >
-          Amazon · University of Toronto
+          Amazon AWS· University of Toronto
         </p>
         <div
           class="hero-el mt-4"
@@ -68,7 +77,9 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="flex justify-between items-center border-t border-base-300 pt-4 text-xs text-primary/60">
+    <div
+      class="flex justify-between items-center border-t border-base-300 pt-4 text-xs text-primary/60"
+    >
       <span>Toronto, Canada</span>
       <span>Open to opportunities</span>
     </div>
